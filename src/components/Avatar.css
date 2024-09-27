@@ -19,7 +19,7 @@
 .myAvatarVideo {
     /* background-color: grey; */
     /* height: 20rem; */
-    width: 13rem;
+    /* width: 13rem; */
     border-radius: 8px;
 }
 .myVideoDiv {
@@ -32,4 +32,27 @@ video {
     width: 20rem;
     height: 18rem;
     border-radius: 8px;
+}
+
+
+.avator-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+}
+
+
+.my-avator-container{
+    height: 300px;
+    width: 600px;
+    background: transparent;
+    /* border: 10px solid blue; */
+}
+
+
+.my-avator-container .myAvatarVideoElement{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
 }
