@@ -10,9 +10,10 @@ export const Avatar = ({ value }) => {
     const myAvatarVideoEleRef = useRef();
     const myAvatarAudioEleRef = useRef();
     const [mySpeechText, setMySpeechText] = useState(value ?? "")
-    var iceUrl = avatarAppConfig.iceUrl;
-    var iceUsername = avatarAppConfig.iceUsername;
-    var iceCredential = avatarAppConfig.iceCredential;
+    const iceUrl = avatarAppConfig.iceUrl;
+    const iceUsername = avatarAppConfig.iceUsername;
+    const iceCredential = avatarAppConfig.iceCredential;
+    const sessionTimerRef = useRef(null);
 
     useEffect(() => {
         if (value) {
